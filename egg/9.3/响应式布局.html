@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>响应式布局</title>
+	<meta name="viewport" content="width=device-width,minimum-scale-1.0,maximum-scale-1.0,initial-scale-1.0,user-scalable=no">
+	<!-- <link rel="stylesheet" media="screen and (max-width:640px)" href="red.css">
+	<link rel="stylesheet" media="screen and (min-width:641px) and (max-width:768px)" href="blue.css">
+	<link rel="stylesheet" media="screen and (min-width:769px) and (max-width:2000px)" href="green.css"> -->
+	<style>
+
+
+		/*建议写在内联*/
+		*{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		div{
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			color: #fff;
+		}
+		li{
+			height: 30px;
+			margin: 5px auto;
+			text-align: center;
+			line-height: 30px;
+			color: #fff;
+		}
+		@media screen and (max-width:640px){
+			div{
+				background: yellow;
+			}
+			li{
+				background: red;
+			}
+		}
+		@media screen and (min-width:641px) and (max-width:768px){
+			div{
+				background: #f0f;;
+			}
+			li{
+				background: blue;
+			}
+		}
+		@media screen and (min-width:769px) and (max-width:2000px){
+			div{
+				background: #3c3c3c;
+			}
+			li{
+				background: green;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>head</div>
+	<ul>
+		<li>one</li>
+		<li>two</li>
+		<li>three</li>
+		<li>foer</li>
+		<li>faif</li>
+	</ul>
+	<div>bottom</div>
+</body>
+</html>
